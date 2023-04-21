@@ -5,7 +5,7 @@
  * main - main block
  * Description: It gets a random number and prints the number
  * if the number is positive, negative or zero then it should
- * Return 0
+ * Return: 0
  */
 int main(void)
 {
