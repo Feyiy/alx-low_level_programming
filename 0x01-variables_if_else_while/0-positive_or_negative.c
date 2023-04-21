@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <stdlib.h>
-/*
+/**
  * main - main block
  * Description: It gets a random number and prints the number
  * if the number is positive, negative or zero then it should
