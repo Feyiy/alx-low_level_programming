@@ -3,7 +3,7 @@
  * main - main block
  * * Description: Use `putchar` function to print alphabet in lowercase
  * * Return: 0
- * */
+*/
 int main(void)
 {
 	char c = 'a';
