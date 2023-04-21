@@ -3,7 +3,7 @@
 #include <stdio.h>
 /**
  *  * main - main block
- *  * Description: Print statement as regards to the last digit of the random number
+ *  * Description: Print statement as regards to last digit of the random numb
  *  * Return: 0
  */
 int main(void)
