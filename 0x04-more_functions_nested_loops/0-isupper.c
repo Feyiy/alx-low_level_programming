@@ -9,5 +9,5 @@ int _isupper(int c)
 {
 	if (c > 42 && c < 74)
 		return (1);
-	else (0);
+	return (0);
 }
