@@ -9,25 +9,24 @@
 * @nmemb: the number of arrays
 * Return: a pointer to the array, or NULL if it fails
 */
-
-void *_calloc(unsigned int nmemb, unsigned int size)
+void	*_calloc(unsigned int nmemb, unsigned int size)
 {
-	unsigned int i;
-	char *ptr;
+	unsigned	int	i;
+	char	*ptr;
 
-	if (nmemb == 0 || size == 0)
-		return (NULL);
+	if	(nmemb == 0 || size == 0)
+		return	(NULL);
 
-	ptr = malloc(size * nmemb);
+	ptr	=	malloc(size * nmemb);
 
-	if (ptr == NULL)
+	if	(ptr == NULL)
 	{
 		free(ptr);
-		return (NULL);
+		return	(NULL);
 	}
-	for (i = 0; i < (nmemb * size); i++)
+	for	(i = 0; i < (nmemb * size); i++)
 	{
-		ptr[i] = 0;
+		ptr[i]	=	0;
 	}
-	return (ptr);
+	return	(ptr);
 }
