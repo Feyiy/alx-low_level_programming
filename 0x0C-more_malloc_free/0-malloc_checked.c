@@ -3,21 +3,21 @@
 #include <stdlib.h>
 
 /**
-* malloc_checked - allocates memory using malloc
-* @b: Number of bytes to allocate
-* Return: Returns a pointer to the allocated memory
+* malloc_checked - this allocates memory using malloc
+* @b: the number of bytes to allocate
+* Return: this returns a pointer to the allocated memory
 */
 
-void	*malloc_checked(unsigned int b)
+void *malloc_checked(unsigned int b)
 {
-	void	*ptr;
+	void *ptr;
 
-	ptr	=	malloc(b);
+	ptr = malloc(b);
 
-	if	(ptr == NULL)
+	if (ptr == NULL)
 	{
 		exit(98);
 	}
 
-	return	(ptr);
+	return (ptr);
 }
