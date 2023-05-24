@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - this checks the code for
+ * main - this checks the code for opcodes
  * @argc: the argument count
  * @argv: the argument vector
  *
