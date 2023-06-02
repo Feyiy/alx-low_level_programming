@@ -2,7 +2,12 @@
 #define _LINKED_LIST
 
 /**
- * Description: singly linked list node structure
+ * struct list_s - the singly linked list
+ * @str: string - malloc'ed string
+ * @len: the length of the string
+ * @next: the points to the next node
+ *
+ * Description: the singly linked list node structure
  */
 typedef struct list_s
 {
