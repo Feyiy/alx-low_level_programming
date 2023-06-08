@@ -5,24 +5,24 @@
  * @b: this points to a string of 0's and 1's
  * Return: the decimal format of the binary
  */
-
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0; /* dec is the variable to hold the decimal format */ 
-	
-	if (b == NULL)
+	int i;
+	unsigned int j;
+
+	j = 0;
+	if (!b)
 		return (0);
-
-	while (*b)
+	for (i = 0; b[i] != '\0'; i++)
 	{
-		if (*b == '1')
-			dec = (dec << 1) | 1;
-		else if (*b == '0')
-			dec <<= 1;
-		else
+		if (b[i] != '0' && b[i] != '1')
 			return (0);
-		b++;
 	}
-
-	return (dec);
+	for (i = 0; b[i] != '\0'; i++)
+	{
+		j <<= 1;
+		if (b[i] == '1')
+			j += 1;
+	}
+	return (j);
 }
