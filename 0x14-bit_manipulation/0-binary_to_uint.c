@@ -8,7 +8,7 @@
 
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int dec = 0; 
+	unsigned int dec = 0; /* dec is the variable to hold the decimal format */ 
 	
 	if (b == NULL)
 		return (0);
