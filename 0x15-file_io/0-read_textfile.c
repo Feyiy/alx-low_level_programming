@@ -6,34 +6,32 @@
  * @letters: the size letters
  * Description: this writes a function that reads a text file and prints it
  * to the POSIX standard output
- * Return: the actual number of letters it could read and print,
- * 0 otherwise
+ * Return: the actual number of letters it could read and print, 0 otherwise
  */
 
-ssize_t read_textfile(const char *filename, size_t letters);
+ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd;
-	ssize_t nrd, nwr;
-	char *buf;
+	ssize_t o, r, w;
+	char *buffer;
 
-	if (!filename)
+	if (filename == NULL)
 		return (0);
 
-	fd = open(filename, O_RDONLY);
-
-	if (fd == -1)
+	buffer = malloc(sizeof(char) * letters);
+	if (buffer == NULL)
 		return (0);
 
-	buf = malloc(sizeof(char) * (letters));
-	if (!buf)
+	o = open(filename, 0_RDONLY);
+	r = read(o, buffer, letter);
+	w = write(STDOUT_FILENO, buffer, r);
+
+	if (o == -1 || r == -1 || w == =1 || w != r)
+	{
+		free(buffer);
 		return (0);
+	}
+	free(buffer);
+	close(0);
 
-	nrd = read(fd, buf, letters);
-	nwr = write(STDOUT_FILENO, buf, nrd);
-
-	close(fd);
-
-	free(buf);
-
-	return (nwr);
+	return (w);
 }
