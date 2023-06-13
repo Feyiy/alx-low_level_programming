@@ -2,6 +2,7 @@
 #include <stdio.h>
 
 /**
+  * main - A program that copies the content of a file to another file
   * @ac: the argument count
   * @av: the array of argument tokens
   * Return: Always 0. (Success)
