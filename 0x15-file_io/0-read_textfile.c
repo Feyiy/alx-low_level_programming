@@ -6,10 +6,11 @@
  * @letters: the size letters
  * Description: this writes a function that reads a text file and prints it
  * to the POSIX standard output
- * Return: the actual number of letters it could read and print, 0 otherwise
+ * Return: the actual number of letters it could read and print,
+ * 0 otherwise
  */
 
-ssize_t read_textfile(const char *filename, size_t letters)
+ssize_t read_textfile(const char *filename, size_t letters);
 {
 	int fd;
 	ssize_t nrd, nwr;
